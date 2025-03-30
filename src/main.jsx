@@ -7,7 +7,7 @@ import Game from './components/Game/Game.jsx';
 import Grid from './components/Grid/Grid.jsx'
 import Home from './components/Home/Home.jsx';
 
-const router=createBrowserRouter([
+const router=createHashRouter([
   {
     path:"/",
     element:<Home/>,  
@@ -22,5 +22,5 @@ createRoot(document.getElementById('root')).render(
  
     <RouterProvider router={router} />
   
-  </StrictMode>,
-)
+  </StrictMode>
+);
