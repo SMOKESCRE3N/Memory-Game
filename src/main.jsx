@@ -18,6 +18,8 @@ const router=createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+  <BrowserRouter basename="/Memory_Game/"> 
     <RouterProvider router={router} />
+  </BrowserRouter>
   </StrictMode>,
 )
